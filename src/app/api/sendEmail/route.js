@@ -13,8 +13,8 @@ export async function POST(req) {
           Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 
         },
         body: JSON.stringify({
-          from: "onboarding@resend.dev", 
-          to: "a.shourey07@gmail.com",
+          from: "mail id", // generated resend mail id
+          to: "mail id", //your personal mail id
           subject: subject || "New Contact Form Submission",
           text: `From: ${name} <${email}>\n\n${message}`,
         }),
